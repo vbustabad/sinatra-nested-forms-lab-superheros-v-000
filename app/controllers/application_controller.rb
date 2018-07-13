@@ -15,7 +15,7 @@ class App < Sinatra::Base
 
       binding.pry
 
-      @team = Team.new(name: params[:team][:name], motto: params[:team][:motto])
+      @team = Team.new(params[:team][:name], params[:team][:motto])
 
       team_members = params[:team][:members]
 
