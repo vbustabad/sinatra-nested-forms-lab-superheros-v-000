@@ -8,11 +8,11 @@ class Superhero
     @name = name
     @power = power
     @biography = biography
+    @@superheroes << self
   end
 
   def self.all
     @@superheroes
   end
-
 
 end
